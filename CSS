@@ -1,3 +1,99 @@
+/*Custom CSS Window*/
+
+.CodeMirror-vscrollbar::-webkit-scrollbar 
+{
+    background-color: transparent;
+    background-clip: padding-box;
+}
+
+.CodeMirror-vscrollbar::-webkit-scrollbar-thumb
+{
+    background-color: #00FFFF; 
+    background-clip: padding-box;
+    border: none;
+    border-radius: 8px;
+}
+
+
+.CodeMirror-vscrollbar::-webkit-scrollbar-track-piece
+{
+    border: 1px solid #00FFFF;
+    background: #181818;
+    border-radius: 8px;
+}
+
+
+
+.CodeMirror-hscrollbar::-webkit-scrollbar 
+{
+    background-color: transparent;
+    background-clip: padding-box;
+}
+
+.CodeMirror-hscrollbar::-webkit-scrollbar-thumb
+{
+    background-color: #00FFFF; 
+    background-clip: padding-box;
+    border: none;
+    border-radius: 6px;
+    
+}
+
+
+.CodeMirror-hscrollbar::-webkit-scrollbar-track-piece
+{
+    border: 1px solid #00FFFF;
+    background: #181818;
+    border-radius: 8px;
+}
+
+
+#bd-customcss-pane.bd-pane.control-group
+
+{
+	border:2px solid #fff;
+    border-radius:50px;
+    padding-left:40px;
+    padding-right:40px;
+    padding-bottom:1px;
+    padding-top:3px;
+}
+
+.CodeMirror-cursor {
+    border-left: 2px solid #fff;
+    border-right: none;
+    width: 0;
+}
+
+.CodeMirror
+{
+	height:400px;
+}
+
+
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar
+{
+	background:#181818;
+}
+
+
+.CodeMirror-linenumber
+{
+	background:#181818;
+    border:1px solid #fff;
+}
+
+.CodeMirror-scroll
+{
+	background:#181818;
+    color:#fff;
+}
+
+
+
+
+
+
 /*Member-Area*/
 
 
@@ -44,6 +140,22 @@
 /*Bottom-Left-Area(Account-Name/Mute_and_Deafen)*/
 
 
+.account .btn-group 
+{
+	border:none;
+}
+
+.account .btn-deafen
+{
+	border-radius:50px;
+}
+
+.account .btn
+
+{
+	border-radius:50px;
+    border:1px solid #00FFFF;
+}
 
 
 #voice-connection
@@ -360,7 +472,8 @@
 
 
 /*Private-Message*/
-	
+
+
 .private-channels, .guild-channels, 
 .guild-header header, .account, .links, 
 .channel-members, .title-wrap 
@@ -416,6 +529,10 @@
 height:0%;
 }
 
+.scroller-wrap, .scroller-wrap .scroller 
+{
+     border: 1px solid #111111;
+}
 
 
 
@@ -666,7 +783,248 @@ code.inline
 }
 
 
+#settings-roles .selected-role .selected-role-inner 
+{
+    background:#181818;
+}
 
+
+#settings-roles .roles, #settings-roles .roles header
+{
+    background:#181818;
+}
+
+#settings-roles .roles li:hover{
+    background:transparent;}
+
+#settings-roles .roles li:hover 
+{
+	border-left:4px solid;
+	border-radius:6px;
+	animation-name: rolehovercolors;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+@keyframes rolehovercolors 
+{
+	0%		{color:	cyan;}
+	25%		{color:	transparent;}
+	50%		{color:	cyan;}
+	75%		{color:	transparent;}
+	100%	{color:	cyan;}
+}
+
+#settings-roles .roles li:hover:before 
+{
+	background-color: transparent;
+}
+
+
+
+#settings-roles .roles li.selected 
+{
+    background:#181818;
+	border-left:4px solid;
+	border-radius:6px;
+	animation-name: rolescolors;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+@keyframes rolescolors
+{
+	0%		{color:	cyan;}
+	25%		{color:	transparent;}
+	50%		{color:	cyan;}
+	75%		{color:	transparent;}
+	100%	{color:	cyan;}
+}
+
+
+#settings-roles .roles li.selected:before
+{
+	background-color: transparent;
+}
+
+.scroller-wrap, .scroller-wrap .scroller {
+    background-color:#181818;
+}
+
+
+#permissions .permissions-helpdesk:hover
+{
+	color:#000;
+}
+
+
+#permissions .permissions-helpdesk
+{
+	color:#00FFFF;
+}
+
+
+.settings .settings-inner .settings-panel-header
+{
+	background:#181818;
+    margin-left:0px;
+    margin-right:0px;
+    padding-left:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+
+.guild-settings-modal-members .guild-settings-modal-members-footer a
+{
+    	color:#00FFFF;
+}
+
+
+.guild-settings-modal-members .guild-settings-modal-members-footer a:hover
+{
+    color:#000;
+}
+
+
+.guild-settings-modal-members .member-buttons .btn.btn-danger:hover
+{
+    background: #FF0000;
+    color: #fff;
+	border:#FF0000;
+}
+
+
+.guild-settings-modal-members .member-buttons .btn.btn-danger
+{
+	background:transparent;
+    border:none;
+    color:#FF0000;
+    font-weight:700;
+}
+
+
+.guild-settings-modal-members .guild-settings-modal-list .member .member-username
+{
+	color:#fff;
+}
+
+
+#settings-roles h1
+{
+	color:#00FFFF;
+}
+
+
+.instant-invites .instant-invites-list .instant-invite .countdown
+{
+	color:#00FFFF;
+}
+
+
+.instant-invites .instant-invites-list .instant-invite .countdown.countdown-never 
+{
+    color: #fff;
+}
+
+
+.settings .settings-inner .settings-panel-header
+{
+	color:#00FFFF;
+}
+
+
+.instant-invites .instant-invite-buttons .btn.btn-danger:hover
+{
+    background:#FF0000;
+    font-weight:700;
+    color:#fff;
+    border:#FF0000;
+}
+
+.instant-invites .instant-invite-buttons .btn.btn-danger
+{
+	background:transparent;
+	border:none;
+    color:#FF0000;
+}
+
+
+.instant-invites .instant-invites-list .instant-invite .channel
+{
+    color:#00FFFF;
+}
+
+
+.instant-invites .instant-invites-list .instant-invite .show-channel .member
+{
+	color:#fff;
+}
+
+
+.instant-invites .instant-invites-list .instant-invite
+{
+    color:#fff;
+}
+
+
+.guild-settings-modal-integrations .guild-settings-modal-integrations-header
+{
+	background:#181818;
+    color:#fff;
+}
+
+.guild-settings-modal-integrations .guild-settings-modal-integrations-body
+{
+	background:#181818;   
+}
+
+
+.guild-settings-modal-integrations .guild-settings-modal-integrations-body.no-integrations p
+{
+	color:#fff;
+}
+
+
+.guild-settings-modal-integrations .guild-settings-modal-integrations-body.no-integrations .integration-logos
+{
+	background-image:url(//s16.postimg.org/3uy51iyv9/Intergrations_Icons.png);
+}
+
+
+.guild-settings-modal-integrations .guild-settings-modal-integrations-body.no-integrations p a
+{
+	color:#00FFFF;
+}
+
+
+.clipboard-input-inner input
+{
+	color:#fff;
+    background:#494949;
+}
+
+
+.clipboard-input-inner button
+{
+	border-left: 1px solid #e1e3e5;
+    width: 40px;
+    height: 40px;
+    background-color: #191919;
+    background-size: 16px 16px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.clipboard-input-inner button:first-of-type:before
+{
+	background: linear-gradient(90deg,hsla(0,0%,100%,0),#191919);
+}
+
+
+.clipboard-input-inner button.copy
+{
+background-image:url(//s10.postimg.org/59aq1vk49/Clipboard_icon.png);
+}
 
 
 
@@ -689,7 +1047,6 @@ code.inline
 {
 	border-top-color:#000000!important;
 }
-
 
 
 
@@ -932,7 +1289,7 @@ code.inline
 
 .language-select .Select-menu::-webkit-scrollbar 
 {
-    background-color: #181818;
+    background-color: transparent;
 	background-clip: padding-box;
 }
 
@@ -951,6 +1308,63 @@ code.inline
     background: #181818;
     border-radius: 10px;
 }
+
+
+
+.guild-settings-modal-members h6
+{
+	color:#fff;
+}
+
+
+.guild-settings-modal-members .guild-settings-modal-members-footer .help-text strong
+{
+	color:#fff;
+}
+
+
+#settings-roles-pro-tip .pro-tip
+{
+	color:#00FFFF;
+}
+
+
+#settings-roles-pro-tip
+{
+	color:#fff;
+}
+
+
+.Select-menu::-webkit-scrollbar 
+{
+    background-color: #transparent;
+	background-clip: padding-box;
+    width:8px;
+}
+
+.Select-menu::-webkit-scrollbar-thumb
+{
+   	background-color: #00FFFF; 
+	background-clip: padding-box;
+	border: none;
+	border-radius: 8px;
+}
+
+
+.Select-menu::-webkit-scrollbar-track-piece
+{
+    border: 1px solid #00FFFF;
+    background: #181818;
+    border-radius: 10px;
+}
+
+
+.Select-menu-outer 
+{
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
 
 
 /*Alertform*/
@@ -1273,6 +1687,11 @@ border-radius:50px!important;
 	color:#fff;
 }
 
+.scroller-wrap .scroller::-webkit-scrollbar-track-piece
+{
+	background:transparent;
+}
+
 
 .settings .settings-inner .settings-panel
 {
@@ -1465,7 +1884,13 @@ border-radius:50px!important;
 {
 	background:#181818;
 }
+.create-guild-container
 
+{
+	border-radius:50px;
+	background:transparent;
+	
+}
 
 .create-guild-container .create-or-join .form-inner 
 {
@@ -1474,6 +1899,8 @@ border-radius:50px!important;
 	background-position:left bottom, right bottom;
 	background-size:,75px auto;
 	background-repeat:no-repeat;
+	border:2px solid #FF0000;
+	border-radius:50px;
 }
 
 
