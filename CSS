@@ -91,7 +91,24 @@
 
 
 
+caption, table, td, th
+{
+	background:#181818;
+    
+}
 
+.bd-g-table tbody td, .bd-g-table thead th
+{
+	color:#fff!important;
+}
+
+#plugins .form .control-group input[type=text], .form .control-group textarea
+{
+	background:#494949!important;
+    text-align:center;
+    
+    
+}
 
 
 /*Member-Area*/
@@ -154,7 +171,7 @@
 
 {
 	border-radius:50px;
-    border:1px solid #00FFFF;
+    border:2px solid #00FFFF;
 }
 
 
@@ -2154,7 +2171,7 @@ dinos--UserName Highlight Shadow Code
 
 Unknown User--Flashing Color/Rotating Color Code
 
-Ventus--Autocomplete Background Color
+! ! qCmdUtl Rōblox--Voice Connection Round Buttons Concept
 
 MOST IMPORTANTLY JIIKS FOR BETTER DISCORD AND ALL IT'S GLORY!
 
