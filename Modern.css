@@ -2488,6 +2488,28 @@ border-radius:50px!important;
 }
 
 
+.theme-dark .chat .title-wrap .topic .topic-full
+{
+    background-color: #111;
+    border-bottom: 1px solid #282b30;
+    box-shadow: none;
+    color:#fff;
+}
+
+
+
+.theme-dark .chat .title-wrap .topic
+{
+    color: #fff;
+}
+
+
+.status-online {
+    background-color: #00FF00;
+}
+
+
+
 /*
 
 ---Special Thanks To!---
