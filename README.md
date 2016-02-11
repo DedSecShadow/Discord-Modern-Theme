@@ -1,5 +1,8 @@
 # Discord-Modern-Theme
 
+![Fulltheme](https://cloud.githubusercontent.com/assets/16980963/12973771/84417d04-d074-11e5-890b-7edabb884659.png)
+______________________
+
 EASY WAY TO CHANGE ACCENT COLORS FROM CYAN TO WHATEVER!
 <br>1.Copy code and paste in notepad++
 {if you dont have notepad++ i suggest you get it}
