@@ -17,6 +17,7 @@ ______________________
 #USER SETTINGS
 Selected Channel Blinks
 As Well As Hover Over Unselected Channels
+<br> https://gyazo.com/db537d0256453419a784d2db62fa374c
 ![USERSETTINGS](https://cloud.githubusercontent.com/assets/16980963/12704541/12f5bb28-c823-11e5-8b40-daf0929c2784.png)
 ______________________
 
