@@ -21,5 +21,6 @@ ______________________
 Unread Message Indicator With Animation
 Muted Channel Hovers Red Indicators
 ![guild channel](https://cloud.githubusercontent.com/assets/16980963/12973257/a0fd237a-d070-11e5-8034-1cae24b0de51.png)
-
+______________________
+# Tutorial For Changing Accents
 ![tutorial](https://cloud.githubusercontent.com/assets/16980963/12973034/7e485cb0-d06f-11e5-914e-3965a17bf99e.png)
