@@ -9,6 +9,7 @@ EASY WAY TO CHANGE ACCENT COLORS FROM CYAN TO WHATEVER!
 <br>5.The other color to change is the menu indicators in settings
 the search for that one is simply "cyan"
 <br>6.Repeat step 3 until satified :D
+<br>IF ANY ISSUES THERE'S A TUTORIAL SNAPSHOT AT THE BOTTOM
 ______________________
 #USER SETTINGS
 Selected Channel Blinks
@@ -21,3 +22,4 @@ Unread Message Indicator With Animation
 Muted Channel Hovers Red Indicators
 ![GUILDCHANNELS](https://cloud.githubusercontent.com/assets/16980963/12704719/3b174d12-c826-11e5-9ef3-7976b853a1d9.png)
 
+![tutorial](https://cloud.githubusercontent.com/assets/16980963/12973034/7e485cb0-d06f-11e5-914e-3965a17bf99e.png)
