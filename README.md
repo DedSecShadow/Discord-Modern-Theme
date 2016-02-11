@@ -17,7 +17,7 @@ ______________________
 #USER SETTINGS
 Selected Channel Blinks
 As Well As Hover Over Unselected Channels
-<br> http://i.imgur.com/BFacpiw.gifv
+<br>[[  http://i.imgur.com/BFacpiw.gifv | height = 100px ]]
 ![USERSETTINGS](https://cloud.githubusercontent.com/assets/16980963/12704541/12f5bb28-c823-11e5-8b40-daf0929c2784.png)
 ______________________
 
