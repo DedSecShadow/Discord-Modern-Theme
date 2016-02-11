@@ -20,6 +20,6 @@ ______________________
 #GUILD CHANNEL INDICATORS
 Unread Message Indicator With Animation
 Muted Channel Hovers Red Indicators
-![GUILDCHANNELS](https://cloud.githubusercontent.com/assets/16980963/12704719/3b174d12-c826-11e5-9ef3-7976b853a1d9.png)
+![guild channel](https://cloud.githubusercontent.com/assets/16980963/12973257/a0fd237a-d070-11e5-8034-1cae24b0de51.png)
 
 ![tutorial](https://cloud.githubusercontent.com/assets/16980963/12973034/7e485cb0-d06f-11e5-914e-3965a17bf99e.png)
