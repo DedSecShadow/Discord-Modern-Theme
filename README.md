@@ -28,3 +28,4 @@ Muted Channel Hovers Red Indicators
 ______________________
 # Tutorial For Changing Accents
 ![tutorial](https://cloud.githubusercontent.com/assets/16980963/12973034/7e485cb0-d06f-11e5-914e-3965a17bf99e.png)
+ 
