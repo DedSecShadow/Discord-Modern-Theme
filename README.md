@@ -18,7 +18,8 @@ ______________________
 Selected Channel Blinks
 As Well As Hover Over Unselected Channels
 
-[Imgur](http://i.imgur.com/BFacpiw.gifv)
+[Gif](http://i.imgur.com/BFacpiw.gifv)
+![user settings](https://cloud.githubusercontent.com/assets/16980963/12704541/12f5bb28-c823-11e5-8b40-daf0929c2784.png)
 ______________________
 
 #GUILD CHANNEL INDICATORS
