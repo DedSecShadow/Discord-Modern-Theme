@@ -3,12 +3,12 @@
 EASY WAY TO CHANGE ACCENT COLORS FROM CYAN TO WHATEVER!
 <br>1.Copy code and paste in notepad++
 {if you dont have notepad++ i suggest you get it}
-<br>2.cntrl+f and Click the tab that says "Replace"
-<br>3.type #00FFFF and below that the color hex you want
+<br>2.Cntrl+f and Click the tab that says "Replace"
+<br>3.Type #00FFFF and below that the color hex you want
 <br>4.Hit "Replace All" button
 <br>5.The other color to change is the menu indicators in settings
 the search for that one is simply "cyan"
-<br>6.Repeat step 4 until satified :D
+<br>6.Repeat step 3 until satified :D
 ______________________
 #USER SETTINGS
 Selected Channel Blinks
