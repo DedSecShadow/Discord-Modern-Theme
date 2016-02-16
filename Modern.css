@@ -242,6 +242,18 @@ caption, table, td, th
 }
 
 
+.guilds li.active .guild-inner {
+    background: transparent!important;
+}
+
+
+.guilds li:hover .guild-inner {
+    background: transparent!important;
+}
+
+
+
+
 .unread .guild-inner:before 
 {
 	background:#ff3333!important;
