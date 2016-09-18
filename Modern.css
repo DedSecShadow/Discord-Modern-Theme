@@ -154,9 +154,16 @@ caption, table, td, th
 
 /*Bottom-Left-Area(Account-Name/Mute_and_Deafen)*/
 
+.account .account-details .username
+{
+	max-width: 90px;
+    margin-left: -15px
+}
+
 .account .btn-group 
 {
 	border:none;
+    margin-left:-50px;
 }
 
 
@@ -235,13 +242,6 @@ caption, table, td, th
 }
 
 
-.guilds li.audio .guild-inner:after
-{
-	background:url(//s17.postimg.org/4cpj1ok4v/notification_sound_icon.gif)center no-repeat;
-	background-size:16px;
-}
-
-
 .guilds li.active .guild-inner {
     background: transparent!important;
 }
@@ -253,6 +253,12 @@ caption, table, td, th
 
 
 
+.guilds li.audio .guild-inner:after
+{
+	background:url(//s17.postimg.org/4cpj1ok4v/notification_sound_icon.gif)center no-repeat;
+	background-size:16px;
+}
+
 
 .unread .guild-inner:before 
 {
@@ -260,7 +266,7 @@ caption, table, td, th
 }
 
 
-.guild-channels ul .channel-text.selected:before 
+.guild-channels .channel-text.selected:before 
 {
 	border-left:4px solid #00FFFF;
 	right:10px;
@@ -268,7 +274,7 @@ caption, table, td, th
 }
 
 
-.guild-channels ul .channel-text.selected:hover:before 
+.guild-channels .channel-text.selected:hover:before 
 {
 	border-left:4px solid;
 	border-radius:6px;
@@ -287,7 +293,7 @@ caption, table, td, th
 }
 
 
-.guild-channels ul .channel-text:hover a 
+.guild-channels .channel-text:hover a 
 {
 	background-color:#181818;
 	border-left:4px solid;
@@ -306,22 +312,34 @@ caption, table, td, th
 }
 
 
-.guild-channels ul .channel-text:hover 
+.guild-channels .channel-text:hover 
 {
 	background:#181818!important;
 	border-left-radius:6px;
 }
 
 
-.guild-channels ul .channel-text:hover:not(.unread):before 
+.guild-channels .channel-text:hover:not(.unread):before 
 {
 	border-left:4px solid;
 }
 
 
-.guild-header ul 
+.guild-header 
 {
 	background-color:#181818;
+}
+
+
+.guild-header ul.treatment-1 li
+{
+	background:#181818;
+}
+
+
+.guild-header.guild-header-open ul.treatment-1
+{
+	background:#181818;
 }
 
 
@@ -344,7 +362,7 @@ caption, table, td, th
 }
 
 
-.guild-channels ul .channel-text.channel-muted:not(.selected) a:hover 
+.guild-channels .channel-text.channel-muted:not(.selected) a:hover 
 {
 	border-left:4px solid;
 	opacity:1;
@@ -365,14 +383,14 @@ caption, table, td, th
 }
 
 
-.guild-channels ul .channel-text:hover:not(.unread):before
+.guild-channels .channel-text:hover:not(.unread):before
 {
 	border-left: 4px solid transparent;
     
 }
 
 
-.guild-channels ul .channel-text.channel-muted:not(.selected) a:hover 
+.guild-channels .channel-text.channel-muted:not(.selected) a:hover 
 {
 	border-right:4px solid;
 	opacity:1;
@@ -393,7 +411,7 @@ caption, table, td, th
 }
 
 
-.guild-channels ul .channel-text:hover:not(.unread):not(.channel-muted) 
+.guild-channels .channel-text:hover:not(.unread):not(.channel-muted) 
 {
 	border-right:4px solid;
 	opacity:.7;
@@ -414,7 +432,7 @@ caption, table, td, th
 }
 
 
-.guild-channels ul .channel-text.channel-muted:not(.selected) a 
+.guild-channels .channel-text.channel-muted:not(.selected) a 
 {
 	border-radius:6px;
 }
@@ -426,13 +444,13 @@ caption, table, td, th
 }
 
 
-.guild-channels ul .channel-text:hover 
+.guild-channels .channel-text:hover 
 {
 	background: transparent;
 }
 
 
-.guild-channels ul .channel-text.unread:not(.selected):not(.channel-muted):before 
+.guild-channels .channel-text.unread:not(.selected):not(.channel-muted):before 
 {
 	border-left:4px solid;
 	border-radius:6px;
@@ -457,7 +475,7 @@ caption, table, td, th
 }
 
 
-.guild-channels ul .channel-text.unread:not(.selected):not(.channel-muted):hover:before 
+.guild-channels .channel-text.unread:not(.selected):not(.channel-muted):hover:before 
 {
 	border-right:4px solid;
 	border-radius:6px;
@@ -482,12 +500,12 @@ caption, table, td, th
 }
 
 
-.guild-channels ul .channel-text.unread:not(.selected):not(.channel-muted):hover:before 
+.guild-channels .channel-text.unread:not(.selected):not(.channel-muted):hover:before 
 {
 	border-left: 4px solid transparent;
 }
 
-.guild-channels ul .channel-text.unread:not(.selected):not(.channel-muted):hover
+.guild-channels .channel-text.unread:not(.selected):not(.channel-muted):hover
 {
     border-radius:6px;
 }
@@ -556,25 +574,51 @@ height:0%;
 
 /*User-Popout*/
 
+.user-popout .header {
+    display: box;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0 0 10px;
+    text-transform: none;
+    background:#181818; 
+    -webkit-background-size: 270px 213px;
+    -moz-background-size: 270px 213px;
+    background-size: 270px 213px;
+}
+
+.user-popout .avatar-wrapper .avatar-popout {
+    border: 4px solid #00FFFF;
+    background-color: #181818;
+}
+
+
+.user-popout .body {
+    background: #181818;
+    border:2px solid #fff;
+    border-top-color:#181818;
+    border-bottom-color:#181818;
+}
+
+.user-popout .footer {
+    background: #181818;
+    border-top: 1px solid #181818;
+    border:2px solid #fff;
+}
+
+.quick-message {
+    border: 1px solid #00FFFF;
+    background: #181818;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+	color:#FFFFFF;
+}
+
+
 .user-popout 
 {
-    -webkit-animation: userpopout 2000ms linear ;
-}
-@-webkit-keyframes userpopout
-{
-    8.81% { -webkit-transform: matrix3d(1.581, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -21.84, 0, 0, 1); }
-    11.96% { -webkit-transform: matrix3d(1.034, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.825, 0, 0, 1); }
-    12.11% { -webkit-transform: matrix3d(1.023, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.53, 0, 0, 1); }
-    15.07% { -webkit-transform: matrix3d(0.947, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.662, 0, 0, 1); }
-    16.12% { -webkit-transform: matrix3d(0.951, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 13.007, 0, 0, 1); }
-    27.23% { -webkit-transform: matrix3d(1.001, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.352, 0, 0, 1); }
-    27.58% { -webkit-transform: matrix3d(1.001, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.121, 0, 0, 1); }
-    38.34% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.311, 0, 0, 1); }
-    40.09% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.291, 0, 0, 1); }
-    50% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.048, 0, 0, 1); }
-    60.56% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.007, 0, 0, 1); }
-    82.78% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
-    100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);}
+   transform:translate3d(0,0,0)!important;
 }
 
 
@@ -589,6 +633,20 @@ height:0%;
 }
 
 
+.user-popout .footer
+{
+	border-bottom-right-radius:50px;
+	border-bottom-left-radius:50px;
+	padding-bottom:15px;
+}
+
+
+.theme-dark.context-menu
+{
+	border:1px solid #00FFFF;
+}
+
+
 .popout
 {
 	border-radius:50px;
@@ -599,7 +657,7 @@ height:0%;
 .user-popout-options 
 {
    border-radius:0 0 50px 50px!important;
-	background:#00FFFF!important;
+   background:#00FFFF!important;
    border-left:2px solid white;
    border-right:2px solid white;
    border-bottom:2px solid white;
@@ -700,23 +758,7 @@ height:0%;
    border-left: 2px solid #fff;
    border-right:2px solid #fff;
     
-    -webkit-animation: inviteheader 2000ms linear ;
-}
-@-webkit-keyframes inviteheader
-{
-    8.81% { -webkit-transform: matrix3d(1.581, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -21.84, 0, 0, 1); }
-    11.96% { -webkit-transform: matrix3d(1.034, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.825, 0, 0, 1); }
-    12.11% { -webkit-transform: matrix3d(1.023, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.53, 0, 0, 1); }
-    15.07% { -webkit-transform: matrix3d(0.947, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.662, 0, 0, 1); }
-    16.12% { -webkit-transform: matrix3d(0.951, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 13.007, 0, 0, 1); }
-    27.23% { -webkit-transform: matrix3d(1.001, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.352, 0, 0, 1); }
-    27.58% { -webkit-transform: matrix3d(1.001, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.121, 0, 0, 1); }
-    38.34% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.311, 0, 0, 1); }
-    40.09% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.291, 0, 0, 1); }
-    50% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.048, 0, 0, 1); }
-    60.56% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.007, 0, 0, 1); }
-    82.78% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
-    100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);}
+    
 }
 
 
@@ -752,23 +794,7 @@ height:0%;
 .popout section
 {
 	background-color:#181818;
-   -webkit-animation: invite 2000ms linear ;
-}
-@-webkit-keyframes invite
-{
-    8.81% { -webkit-transform: matrix3d(1.581, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -21.84, 0, 0, 1); }
-    11.96% { -webkit-transform: matrix3d(1.034, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.825, 0, 0, 1); }
-    12.11% { -webkit-transform: matrix3d(1.023, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.53, 0, 0, 1); }
-    15.07% { -webkit-transform: matrix3d(0.947, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.662, 0, 0, 1); }
-    16.12% { -webkit-transform: matrix3d(0.951, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 13.007, 0, 0, 1); }
-    27.23% { -webkit-transform: matrix3d(1.001, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.352, 0, 0, 1); }
-    27.58% { -webkit-transform: matrix3d(1.001, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.121, 0, 0, 1); }
-    38.34% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.311, 0, 0, 1); }
-    40.09% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.291, 0, 0, 1); }
-    50% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.048, 0, 0, 1); }
-    60.56% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.007, 0, 0, 1); }
-    82.78% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
-    100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);}
+   
 }
 
 
@@ -789,6 +815,37 @@ height:0%;
 	border-radius:12px;
 }
 
+
+#instant-invite-modal .form-header header
+{
+	color:#00FFFF;
+	padding-left:0px;
+}
+
+#instant-invite-modal .copy
+{
+	background-color:#181818;
+	color:#181818;
+	font-size:0px;
+}
+
+#instant-invite-modal .copy:hover
+{
+	background-color:#00FFFF;
+	color:#181818;
+}
+
+
+#instant-invite-modal .clipboard-input-inner input
+{
+	color:#FFFFFF;
+}
+
+
+.instant-invite-modal
+{
+	background:Transparent;
+}
 
 /*profile*/
 	
@@ -1551,6 +1608,107 @@ background-image:url(//s10.postimg.org/59aq1vk49/Clipboard_icon.png);
     border-bottom-left-radius: 10px;
 }
 
+
+.now-playing
+{
+	margin-top:0px;
+}
+
+
+.now-playing.no-detection
+{
+	background:#181818;
+	border:1px solid #FFFFFF;
+}
+
+
+.now-playing-add .link:hover
+{
+	color:#00FFFF;
+}
+
+
+.now-playing-add .link
+{
+	color:#FFFFFF;
+}
+
+
+.user-settings-modal-games .games-table .games-row .item-game .last-played
+{
+	color:#FFFFFF;
+}
+
+
+.user-settings-modal-games .games-table .games-row .item-game .game-name
+{
+	color:#00FFFF;
+}
+
+
+.user-settings-modal-games .games-table .games-row .item-game .game-input
+{
+	color:#00FFFF;
+}
+
+
+.radio-theme input[type=radio]:checked~label
+{
+	border-color:#00FFFF;
+}
+
+
+.user-settings-modal-keybinds .user-settings-modal-keybinds-header .account-warning
+{
+	margin-right:15px!important;	
+}
+
+
+.user-settings-security .btn-ghost:hover
+{
+	background:Transparent;
+	border-color:#00FFFF;
+	color:#00FFFF;
+}
+
+
+.user-settings-security .btn-ghost
+{
+	background:Transparent;
+}
+
+
+.settings-connections-wrapper .tab-bar
+{
+	background:#181818;
+}
+
+
+.settings .settings-inner:first-child
+{
+	background:#181818;
+}
+
+
+.bda-slist li
+{
+	background:#181818 !important;
+	border-top:1px solid #00FFFF !important;
+    border-bottom:1px solid #00FFFF !important;
+}
+
+
+.bda-slist .bda-right .bda-plugin-reload
+{
+	background:Transparent;
+	border:1px solid;
+}
+
+.bda-slist .bda-right .bda-plugin-settings
+{
+	background:Transparent;
+	border:1px solid;
+}
 
 /*Alertform*/
 
@@ -2388,7 +2546,9 @@ border-radius:50px!important;
 
 .settings .settings-actions 
 {
-    background-color: #181818;;
+    background-color: #181818;
+	padding-bottom:2px;
+	padding-top:4px;
 }
 
 
@@ -2537,47 +2697,108 @@ border-radius:50px!important;
 }
 
 
-.now-playing.no-detection
+.protip .label
 {
-    padding: 14px 0;
-    background: #181818;
-    -webkit-animation: none;
-    animation: none;
+	color:#00FFFF;
 }
 
-.now-playing
+.upload-modal {
+    width: 520px;
+    min-height: 258px;
+    background-color: #181818;
+}
+
+
+.upload-modal .footer
 {
-	background:transparent;
-    margin-top:10px;
-    margin-bottom:3px;
-    border: 1px solid #fff;
-    border-radius: 10px;
+background-color: #181818;
 }
 
-.now-playing-add .link {
-    color: #00FFFF;
+.upload-modal .footer .button 
+{
+	background-color: #181818;
+}
+
+.upload-modal .footer .button:hover 
+{
+	background-color: #00FFFF;
+}
+
+.theme-dark #friends
+{
+	background-color: #181818;
+}
+
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary:hover:not(.selected)
+{
+	background-color:#00FFFF;
+    color:#181818;
+}
+
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary
+{
+	background-color:#181818;
+   
+}
+
+.private-channels .channel.selected .icon-friends
+{
+	background-color:#00FFFF;
+}
+
+.theme-dark #friends .friends-header
+{
+    background-color:#181818;
+}
+
+.theme-dark #friends .friends-table .friends-table-header
+{
+
+   border-bottom: 1px solid #00FFFF;
+   background:#181818;   
 }
 
 
-.now-playing-add .link:hover {
-    color: #fff;
+.change-log-button-container
+{
+	position:static;
+}
+
+.change-log-button-container .change-log-button
+{
+	color:#00FFFF;
+    border-top:1px solid;
+}
+
+.change-log-button-container .change-log-button:hover
+{
+	color:#FFFFFF;
 }
 
 
-@keyframes now-playing-pulse{
-    0%{box-shadow:0 0 10px 2px rgba(0,0,0,.12),0 0 0 0 #00FFFF}
-    70%{box-shadow:0 0 10px 2px rgba(0,0,0,.12),0 0 10px 10px rgba(115,139,215,0)}
-    to{box-shadow:0 0 10px 2px rgba(0,0,0,.12),0 0 0 0 rgba(115,139,215,0)}}
 
-.boticon:before, .member-username[data-reactid*="102910621653172224"]:before {
-    content: url(//s14.postimg.org/bdr9bpijx/Twitch_Emblem.png);
-    margin-right:4px;
+#bd-customcss-attach-controls, #bd-customcss-detach-controls
+{
+	background:#181818;
+    border:none;
+    border-bottom-radius:50px;
 }
 
+.chat>.title-wrap>.topic .aka
+{
+	background:#00FFFF;
+    color:#181818;
+	font-weight:700;
+}
 
-.boticon:before, h2[data-reactid*="127674978219982848"]:before {
-    content: url(//s14.postimg.org/bdr9bpijx/Twitch_Emblem.png);
-    margin-right:4px;
+#editor-detached h3
+{
+	color:Red !important;
+}
+
+#overlay-explanation
+{
+	background:Red;
 }
 
 
