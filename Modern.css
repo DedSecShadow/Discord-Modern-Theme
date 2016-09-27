@@ -1,6 +1,5 @@
 //META{"name":"Modern_Theme","description":"Simple Modern Theme","author":"Clutch3547","version":"3.0"}*//
 
-
 .app 
 {
 	overflow:hidden;
@@ -651,7 +650,7 @@ height:0%;
 {
 	border-radius:5px;
    box-shadow: 10px 20px 4px rgba(0,0,0,.16);
-   border:2px solid #00FFFF;
+   
 }
 
 
@@ -2835,6 +2834,8 @@ background-color: #181818;
 {
 	background:#181818;
 }
+
+
 
 
 
